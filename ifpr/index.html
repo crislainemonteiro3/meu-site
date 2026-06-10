@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crislaine Monteiro | Professora de Biologia, Física e Educação Digital</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#0f4c81;
+    --secondary:#00b894;
+    --light:#f8fafc;
+    --dark:#1e293b;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+.section-title{
+    font-family:'Playfair Display',serif;
+    font-size:2.5rem;
+    color:var(--primary);
+    position:relative;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+.section-title::after{
+    content:'';
+    width:80px;
+    height:4px;
+    background:var(--secondary);
+    display:block;
+    margin:15px auto;
+    border-radius:20px;
+}
+
+.navbar{
+    background:#ffffffee !important;
+    backdrop-filter: blur(8px);
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.navbar-brand{
+    font-weight:700;
+    color:var(--primary)!important;
+    font-family:'Playfair Display',serif;
+}
+
+.nav-link{
+    font-weight:500;
+    color:var(--primary)!important;
+    font-family:'Poppins',sans-serif;
+    transition: color .25s ease, transform .25s ease;
+}
+
+.nav-link:hover{
+    color:#0a3a6d !important;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(15,76,129,.85),
+    rgba(0,184,148,.75)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+.avatar{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid rgba(255,255,255,.3);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.btn-custom{
+    background:var(--secondary);
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:50px;
+}
+
+.btn-custom:hover{
+    background:#00a382;
+    color:white;
+}
+
+.section{
+    padding:100px 0;
+}
+
+.card-custom{
+    border:none;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.card-custom:hover{
+    transform:translateY(-10px);
+}
+
+.icon-box{
+    font-size:3rem;
+    color:var(--secondary);
+}
+
+.skills{
+    background:#f8fafc;
+}
+
+.skill-item{
+    text-align:center;
+    padding:30px;
+}
+
+.skill-item i{
+    font-size:3rem;
+    color:var(--primary);
+}
+
+.contact{
+    background:linear-gradient(135deg,#0f4c81,#00b894);
+    color:white;
+}
+
+.form-control{
+    border-radius:12px;
+    padding:12px;
+}
+
+.social a{
+    font-size:1.8rem;
+    color:white;
+    margin:0 10px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#ffd43b;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- MENU -->
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<i class="bi bi-mortarboard-fill"></i>
+Crislaine Monteiro
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#inicio">Início</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#sobre">Sobre</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#atuacao">Atuação</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#competencias">Competências</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contato">Contato</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section id="inicio" class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-7">
+
+<h1>Crislaine Monteiro</h1>
+
+<h3 class="mb-4">
+Professora de Biologia, Física e Educação Digital
+</h3>
+
+<p>
+Professora da Rede Estadual de Ensino do Paraná desde 2023,
+graduada em Ciências Biológicas e apaixonada por metodologias
+ativas, experimentação científica, tecnologia educacional e
+aprendizagem significativa.
+</p>
+
+<div class="mt-4">
+
+<a href="#contato" class="btn btn-custom me-3">
+Entrar em Contato
+</a>
+
+<a href="#sobre" class="btn btn-outline-light">
+Saiba Mais
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-5 text-center mt-5 mt-lg-0">
+
+<img
+src="image.png"
+class="avatar"
+alt="Foto Perfil">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SOBRE -->
+
+<section id="sobre" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Sobre Mim
+</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-10 text-center">
+
+<p class="lead">
+Sou professora da Rede Estadual do Paraná e acredito que a
+educação é uma ferramenta transformadora capaz de desenvolver
+o potencial humano e formar cidadãos críticos e conscientes.
+</p>
+
+<p>
+Minha atuação está voltada para a integração entre Ciência,
+Tecnologia e Educação, promovendo aulas dinâmicas, criativas
+e interativas que incentivam o protagonismo dos estudantes e
+a construção do conhecimento de forma significativa.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ATUAÇÃO -->
+
+<section id="atuacao" class="section bg-light">
+
+<div class="container">
+
+<h2 class="section-title">
+Atuação Profissional
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card card-custom p-4 text-center">
+<div class="icon-box">
+<i class="bi bi-flower1"></i>
+</div>
+<h4>Biologia</h4>
+<p>
+Ensino de Ciências da Vida com práticas experimentais,
+investigação científica e sustentabilidade.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom p-4 text-center">
+<div class="icon-box">
+<i class="bi bi-lightning-charge-fill"></i>
+</div>
+<h4>Física</h4>
+<p>
+Aulas contextualizadas com resolução de problemas,
+simulações e experimentos práticos.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom p-4 text-center">
+<div class="icon-box">
+<i class="bi bi-laptop"></i>
+</div>
+<h4>Educação Digital</h4>
+<p>
+Uso de tecnologias educacionais, ferramentas digitais e
+metodologias inovadoras para aprendizagem.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- COMPETÊNCIAS -->
+
+<section id="competencias" class="section skills">
+
+<div class="container">
+
+<h2 class="section-title">
+Competências e Interesses
+</h2>
+
+<div class="row">
+
+<div class="col-md-3 skill-item">
+<i class="bi bi-diagram-3-fill"></i>
+<h5 class="mt-3">Mapas Mentais</h5>
+</div>
+
+<div class="col-md-3 skill-item">
+<i class="bi bi-patch-question-fill"></i>
+<h5 class="mt-3">Quizzes Interativos</h5>
+</div>
+
+<div class="col-md-3 skill-item">
+<i class="bi bi-cpu-fill"></i>
+<h5 class="mt-3">Tecnologia Educacional</h5>
+</div>
+
+<div class="col-md-3 skill-item">
+<i class="bi bi-recycle"></i>
+<h5 class="mt-3">Sustentabilidade</h5>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato" class="section contact">
+
+<div class="container">
+
+<h2 class="section-title text-white">
+Contato
+</h2>
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<h4>Vamos conversar!</h4>
+
+<p>
+Entre em contato para troca de experiências,
+projetos educacionais, tecnologia na educação
+ou parcerias acadêmicas.
+</p>
+
+<p>
+<i class="bi bi-envelope-fill"></i>
+crislainemonteirob@gmail.com
+</p>
+
+<p>
+<i class="bi bi-github"></i>
+github.com/crislainemonteiro3
+</p>
+
+<div class="social mt-4">
+
+<a href="#">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="#">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="#">
+<i class="bi bi-linkedin"></i>
+</a>
+
+<a href="https://github.com/crislainemonteiro3">
+<i class="bi bi-github"></i>
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<form>
+
+<div class="mb-3">
+<input type="text"
+class="form-control"
+placeholder="Seu Nome">
+</div>
+
+<div class="mb-3">
+<input type="email"
+class="form-control"
+placeholder="Seu E-mail">
+</div>
+
+<div class="mb-3">
+<input type="text"
+class="form-control"
+placeholder="Assunto">
+</div>
+
+<div class="mb-3">
+<textarea
+rows="5"
+class="form-control"
+placeholder="Sua Mensagem"></textarea>
+</div>
+
+<button class="btn btn-light btn-lg">
+Enviar Mensagem
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RODAPÉ -->
+
+<footer class="text-center">
+
+<p class="mb-0">
+© 2026 Crislaine Monteiro • Professora de Biologia, Física e Educação Digital
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
